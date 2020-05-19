@@ -15,10 +15,10 @@ This script has been tested to migrate from a Satellite 6.3 to a Satellite 6.7 i
 
 # Requirements
 
-The host to be migrated must be registered to a Satellite 6 Server
-The host group and activation key must be the same on both servers you intend to migrate the host across
-There needs to be a service account for the API to make a call to on the old host and a service account on the new Satellite.
-
+* The host to be migrated must be registered to a Satellite 6 Server
+* The host group and activation key must be the same on both servers you intend to migrate the host across
+* There needs to be a service account on the old and new Satellites
+* Need an ability to deploy the script to the host to be migrated
 
 The migration script can be copied and extended to support custom enviroments by adding more variables and changing the hard coded values.
 
