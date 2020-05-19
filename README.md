@@ -6,7 +6,7 @@ This script has been tested to migrate from a Satellite 6.3 to a Satellite 6.7 i
 
 # How it works
 
-* Performs API call to the old Satellite server to grab the curren host details
+* Performs API call to the old Satellite server to grab the current host details
 * Stores the host group and activation key as variables
 * Performs a wget of the bootstrap that is used to do the migration
 * Makes the bootstrap executable
