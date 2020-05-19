@@ -3,7 +3,7 @@
 ## Script to migrate from one Satellite 6 to another Satellite 6
 ## chsimon@redhat.com
 
-## Make an API call to the Satellite with the curren hosts details
+## Make an API call to the Satellite with the current host details
 ## Save the variables that we need
 o=$(curl --request GET --insecure --user admin:changeme123 https://sat67.local.chrissimon.net/api/hosts/$(hostname) | python -m json.tool)
 hg=$(echo $o |tr '"' '\n' | grep -v -e ^$ -e ^: | awk 'c&&!--c; /^hostgroup_name/{c=1}')
